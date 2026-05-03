@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VisionText AI | Multi-Image Text Extraction for E-commerce</title>
+  <meta name="description" content="VisionText AI is a school project website for an AI tool that turns multiple images into editable text.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/img/logo.png" alt="TZNtech VisionText AI logo">
+        <span class="brand-copy">
+          <span class="brand-company">TZNtech</span>
+          <span class="brand-product">VisionText AI</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+      <nav class="site-nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="pinterest.html">Pinterest Marketing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">School Project Demo</p>
+          <h1>Turn many images into clean, editable text in one place.</h1>
+          <p class="lead">VisionText AI helps users collect text from screenshots, receipts, labels, invoices, scanned pages, and product images. It is designed as a simple e-commerce focused concept for class presentation.</p>
+          <div class="button-row">
+            <a class="button button-primary" href="product.html">Explore Product</a>
+            <a class="button button-secondary" href="#demo">View Demo</a>
+          </div>
+          <ul class="mini-points">
+            <li>Multi-image upload idea</li>
+            <li>Editable extracted text</li>
+            <li>Useful for online sellers and small teams</li>
+          </ul>
+        </div>
+        <div class="hero-visual card">
+          <img src="assets/img/hero-visual.svg" alt="Illustration of image cards becoming editable text cards">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Why It Matters</p>
+          <h2>Built for busy e-commerce work</h2>
+          <p>Many online businesses handle text hidden inside images every day. VisionText AI makes that information easier to reuse.</p>
+        </div>
+        <div class="card-grid three-col">
+          <article class="feature-card card">
+            <h3>Product Listing Support</h3>
+            <p>Extract text from product labels, packaging, and supplier photos to prepare faster listings.</p>
+          </article>
+          <article class="feature-card card">
+            <h3>Document Cleanup</h3>
+            <p>Turn receipts, invoices, and scanned pages into text that can be edited and organized.</p>
+          </article>
+          <article class="feature-card card">
+            <h3>Team Efficiency</h3>
+            <p>Copy and export results for marketing, inventory notes, customer support, and reports.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section" id="demo">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Fake Product Demo</p>
+          <h2>Multi-image upload concept</h2>
+          <p>This section is only a visual demo for presentation. It does not connect to a real backend.</p>
+        </div>
+        <div class="demo-layout">
+          <div class="card upload-panel">
+            <div class="upload-dropzone" id="demoDropzone">
+              <img src="assets/img/demo-grid.svg" alt="Graphic of image tiles" class="demo-icon">
+              <h3>Upload many images</h3>
+              <p>Add screenshots, labels, receipts, product photos, or scanned pages.</p>
+              <button class="button button-primary" id="fakeUploadButton" type="button">Simulate Upload</button>
+            </div>
+            <div class="upload-list" id="uploadList">
+              <div class="upload-item"><span>receipt-april.jpg</span><strong>Ready</strong></div>
+              <div class="upload-item"><span>product-label.png</span><strong>Ready</strong></div>
+              <div class="upload-item"><span>supplier-sheet.jpeg</span><strong>Ready</strong></div>
+            </div>
+          </div>
+          <div class="card result-panel">
+            <div class="result-header">
+              <h3>Example extracted text</h3>
+              <button class="button button-secondary small-button" id="fakeResultButton" type="button">Generate Sample</button>
+            </div>
+            <textarea id="resultBox" aria-label="Example extracted text">Store Name: Bright Market
+Invoice Number: BM-2048
+Item: Glass Bottle 500ml
+Color: Clear
+Material: Recycled Glass
+Quantity: 48
+Unit Price: $4.20
+Notes: Label text includes care instructions and barcode code.</textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Target Customers</p>
+          <h2>Who can use VisionText AI?</h2>
+        </div>
+        <div class="card-grid three-col">
+          <article class="card stat-card">
+            <h3>Small E-commerce Stores</h3>
+            <p>Owners who need product details from packaging, labels, and supplier images.</p>
+          </article>
+          <article class="card stat-card">
+            <h3>Resellers & Marketplace Sellers</h3>
+            <p>People selling on Etsy, Amazon, eBay, or local marketplaces who need faster text entry.</p>
+          </article>
+          <article class="card stat-card">
+            <h3>Student Teams & Offices</h3>
+            <p>Users who want editable text from printed or scanned documents for reports and tasks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-card">
+        <div>
+          <p class="eyebrow">Next Step</p>
+          <h2>See product details, workflow, and pricing demo.</h2>
+        </div>
+        <a class="button button-primary" href="pricing.html">View Pricing</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <img class="brand-logo footer-logo" src="assets/img/logo.png" alt="TZNtech VisionText AI logo">
+          <span class="brand-copy footer-copy">
+            <span class="brand-company">TZNtech</span>
+            <span class="brand-product">VisionText AI</span>
+          </span>
+        </a>
+        <p>VisionText AI is a static school project product concept by TZNtech for e-commerce users.</p>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <a href="product.html">Product</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="pricing.html">Pricing</a>
+      </div>
+      <div>
+        <h3>Project</h3>
+        <a href="pinterest.html">Pinterest Marketing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h3>Social</h3>
+        <a href="https://www.pinterest.com/TZNtech/" target="_blank" rel="noopener noreferrer">TZNtech Pinterest</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 TZNtech. VisionText AI created for a school presentation.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
