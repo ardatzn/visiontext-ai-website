@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VisionText AI | Multi-Image Text Extraction for E-commerce</title>
-  <meta name="description" content="VisionText AI is a school project website for an AI tool that turns multiple images into editable text.">
+  <title>VisionText AI | Image to Text AI by TZNtech</title>
+  <meta name="description" content="VisionText AI is an Image to Text AI school project that converts multiple images into editable text.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
         <a href="product.html">Product</a>
         <a href="how-it-works.html">How It Works</a>
         <a href="pricing.html">Pricing</a>
-        <a href="pinterest.html">Pinterest Marketing</a>
+        <a href="instagram.html">Instagram Marketing</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -37,17 +37,17 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">School Project Demo</p>
-          <h1>Turn many images into clean, editable text in one place.</h1>
-          <p class="lead">VisionText AI helps users collect text from screenshots, receipts, labels, invoices, scanned pages, and product images. It is designed as a simple e-commerce focused concept for class presentation.</p>
+          <p class="eyebrow">Image to Text AI</p>
+          <h1>Convert multiple images into clean, editable text.</h1>
+          <p class="lead">VisionText AI by TZNtech is an AI-powered image-to-text system for screenshots, receipts, invoices, product labels, scanned documents, notes, and e-commerce images.</p>
           <div class="button-row">
             <a class="button button-primary" href="product.html">Explore Product</a>
             <a class="button button-secondary" href="#demo">View Demo</a>
           </div>
           <ul class="mini-points">
-            <li>Multi-image upload idea</li>
-            <li>Editable extracted text</li>
-            <li>Useful for online sellers and small teams</li>
+            <li>AI Image to Text Converter</li>
+            <li>Multiple Images to Editable Text</li>
+            <li>E-commerce image-to-text workflow</li>
           </ul>
         </div>
         <div class="hero-visual card">
@@ -60,8 +60,8 @@
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Why It Matters</p>
-          <h2>Built for busy e-commerce work</h2>
-          <p>Many online businesses handle text hidden inside images every day. VisionText AI makes that information easier to reuse.</p>
+          <h2>Image-based text extraction for daily work</h2>
+          <p>Many businesses and students handle important text trapped inside images. VisionText AI helps users copy, edit, organize, and export that information faster.</p>
         </div>
         <div class="card-grid three-col">
           <article class="feature-card card">
@@ -83,37 +83,53 @@
     <section class="section alt-section" id="demo">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Fake Product Demo</p>
-          <h2>Multi-image upload concept</h2>
-          <p>This section is only a visual demo for presentation. It does not connect to a real backend.</p>
+          <p class="eyebrow">Front-End Prototype</p>
+          <h2>Try the Image to Text AI Demo</h2>
+          <p>This fake converter shows the intended user experience without real file upload or OCR processing.</p>
         </div>
         <div class="demo-layout">
           <div class="card upload-panel">
             <div class="upload-dropzone" id="demoDropzone">
               <img src="assets/img/demo-grid.svg" alt="Graphic of image tiles" class="demo-icon">
-              <h3>Upload many images</h3>
-              <p>Add screenshots, labels, receipts, product photos, or scanned pages.</p>
-              <button class="button button-primary" id="fakeUploadButton" type="button">Simulate Upload</button>
+              <h3>Drop, Upload or Paste Images</h3>
+              <p>Supported formats: JPG, PNG, JPEG, HEIC, PDF, WebP</p>
+              <div class="button-row demo-buttons">
+                <button class="button button-primary" id="fakeUploadButton" type="button">Browse Files</button>
+                <button class="button button-secondary" id="clearDemoButton" type="button">Clear All</button>
+                <button class="button button-primary" id="fakeResultButton" type="button">Convert</button>
+              </div>
             </div>
+            <p class="privacy-note"><strong>Privacy-first demo:</strong> This front-end prototype does not actually upload, store, or send files to a server.</p>
             <div class="upload-list" id="uploadList">
-              <div class="upload-item"><span>receipt-april.jpg</span><strong>Ready</strong></div>
               <div class="upload-item"><span>product-label.png</span><strong>Ready</strong></div>
-              <div class="upload-item"><span>supplier-sheet.jpeg</span><strong>Ready</strong></div>
+              <div class="upload-item"><span>price-tag.webp</span><strong>Ready</strong></div>
+              <div class="upload-item"><span>class-notes.heic</span><strong>Ready</strong></div>
+              <div class="upload-item"><span>invoice-scan.pdf</span><strong>Ready</strong></div>
             </div>
           </div>
           <div class="card result-panel">
             <div class="result-header">
-              <h3>Example extracted text</h3>
-              <button class="button button-secondary small-button" id="fakeResultButton" type="button">Generate Sample</button>
+              <h3>Result Preview</h3>
             </div>
-            <textarea id="resultBox" aria-label="Example extracted text">Store Name: Bright Market
-Invoice Number: BM-2048
-Item: Glass Bottle 500ml
-Color: Clear
-Material: Recycled Glass
-Quantity: 48
-Unit Price: $4.20
-Notes: Label text includes care instructions and barcode code.</textarea>
+            <textarea id="resultBox" aria-label="Example extracted text">Product Label:
+Organic Face Cream
+Hydrating Moisturizer
+Net Weight: 50ml
+
+Price Tag:
+$59.99
+SKU: 123456789
+
+Invoice:
+Invoice No: INV-2025-0314
+Supplier: GreenLeaf Supplies
+Total: $209.69</textarea>
+            <div class="result-actions">
+              <button class="button button-secondary small-button" type="button">Copy Text</button>
+              <button class="button button-secondary small-button" type="button">Download TXT</button>
+              <button class="button button-secondary small-button" type="button">Export CSV</button>
+              <button class="button button-secondary small-button" type="button">Export Excel</button>
+            </div>
           </div>
         </div>
       </div>
@@ -122,22 +138,69 @@ Notes: Label text includes care instructions and barcode code.</textarea>
     <section class="section">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Target Customers</p>
-          <h2>Who can use VisionText AI?</h2>
+          <p class="eyebrow">Extraction Modes</p>
+          <h2>Choose the right text extraction mode</h2>
+        </div>
+        <div class="card-grid two-col">
+          <article class="card mode-card">
+            <h3>Simple Text Mode</h3>
+            <p>For plain text extraction from screenshots, notes, scanned documents, and images.</p>
+          </article>
+          <article class="card mode-card">
+            <h3>Structured Data Mode</h3>
+            <p>For product labels, prices, invoices, receipts, and e-commerce data.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">File Support</p>
+          <h2>Supported File Types</h2>
+        </div>
+        <div class="format-list">
+          <span>JPG</span>
+          <span>PNG</span>
+          <span>JPEG</span>
+          <span>HEIC</span>
+          <span>PDF</span>
+          <span>WebP</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Use Cases</p>
+          <h2>Where Can You Use VisionText AI?</h2>
         </div>
         <div class="card-grid three-col">
-          <article class="card stat-card">
-            <h3>Small E-commerce Stores</h3>
-            <p>Owners who need product details from packaging, labels, and supplier images.</p>
-          </article>
-          <article class="card stat-card">
-            <h3>Resellers & Marketplace Sellers</h3>
-            <p>People selling on Etsy, Amazon, eBay, or local marketplaces who need faster text entry.</p>
-          </article>
-          <article class="card stat-card">
-            <h3>Student Teams & Offices</h3>
-            <p>Users who want editable text from printed or scanned documents for reports and tasks.</p>
-          </article>
+          <article class="card feature-card"><h3>Product Labels</h3><p>Extract product names, descriptions, weights, and ingredients.</p></article>
+          <article class="card feature-card"><h3>Price Tags</h3><p>Read prices, SKUs, and barcode-related text from product photos.</p></article>
+          <article class="card feature-card"><h3>Invoices & Receipts</h3><p>Capture totals, dates, supplier names, and item details.</p></article>
+          <article class="card feature-card"><h3>Class Notes</h3><p>Turn screenshots or scanned notes into editable text.</p></article>
+          <article class="card feature-card"><h3>Business Documents</h3><p>Digitize printed documents for faster data entry.</p></article>
+          <article class="card feature-card"><h3>E-Commerce Listings</h3><p>Extract text from product images and prepare listing information faster.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>Common questions</h2>
+        </div>
+        <div class="faq-list">
+          <article class="card faq-item"><h3>What is VisionText AI?</h3><p>VisionText AI is an AI-powered image-to-text product idea that converts multiple images into editable text.</p></article>
+          <article class="card faq-item"><h3>Can it convert multiple images into text?</h3><p>Yes. The concept supports batch image upload and text extraction from multiple images.</p></article>
+          <article class="card faq-item"><h3>Which file formats are supported?</h3><p>The demo shows support for JPG, PNG, JPEG, HEIC, PDF, and WebP.</p></article>
+          <article class="card faq-item"><h3>Can it read invoices and product labels?</h3><p>Yes. The structured data mode is designed for labels, receipts, invoices, and e-commerce documents.</p></article>
+          <article class="card faq-item"><h3>Is this a real working upload system?</h3><p>No. This website is a front-end prototype for a school e-commerce project. The upload area is a visual demo.</p></article>
+          <article class="card faq-item"><h3>Can users export the extracted text?</h3><p>The website shows demo export options such as TXT, CSV, and Excel.</p></article>
         </div>
       </div>
     </section>
@@ -173,13 +236,13 @@ Notes: Label text includes care instructions and barcode code.</textarea>
       </div>
       <div>
         <h3>Project</h3>
-        <a href="pinterest.html">Pinterest Marketing</a>
+        <a href="instagram.html">Instagram Marketing</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </div>
       <div>
         <h3>Social</h3>
-        <a href="https://www.pinterest.com/TZNtech/" target="_blank" rel="noopener noreferrer">TZNtech Pinterest</a>
+        <a href="https://www.instagram.com/tzntech/" target="_blank" rel="noopener noreferrer">TZNtech Instagram</a>
       </div>
     </div>
     <div class="container footer-bottom">

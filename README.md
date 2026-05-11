@@ -8,7 +8,7 @@ VisionText AI is a static school project website for an e-commerce style AI prod
 - `product.html` - Product overview
 - `how-it-works.html` - Workflow explanation
 - `pricing.html` - Demo pricing page
-- `pinterest.html` - Pinterest marketing plan
+- `instagram.html` - Instagram marketing plan
 - `about.html` - About the school project
 - `contact.html` - Contact form design
 - `assets/css/style.css` - Shared styles for all pages
@@ -23,7 +23,7 @@ VisionText AI is a static school project website for an e-commerce style AI prod
 - Fake multi-image upload demo
 - Example text extraction result area
 - Pricing cards
-- Pinterest marketing strategy page
+- Instagram marketing strategy page
 - Contact form design
 
 ## How To Open
